@@ -14,6 +14,21 @@
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
+        <style>
+        	.select2-results .tinysong-item{
+        		font-size: 10px;
+        	}
+        	.select2-results .tinysong-item strong{
+        		font-size: 15px;
+        	}
+        	.select2-results .tinysong-item em{
+        		font-size: 12px;
+        		background-color: transparent;
+        	}
+        	.select2-results .tinysong-item .preview-link{
+        		font-size: 20px;
+        	}
+        </style>
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
@@ -44,7 +59,7 @@
         <script src="../tinysong.select2.js"></script>
         <script>
         $(function(){
-        	$('input').selectTinysong("URL_HERE");
+        	$('input').selectTinysong("fake.json");
         });
         </script>
         
